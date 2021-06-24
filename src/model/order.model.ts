@@ -3,7 +3,7 @@ import StockItem from './stockItem.model';
 import User from './user.model';
 
 @Table
-export default class Order extends Model {
+export default class School extends Model {
   @PrimaryKey
   @AutoIncrement
   @Column
@@ -12,6 +12,10 @@ export default class Order extends Model {
   @AllowNull(false)
   @Column(DataType.STRING(20))
   type: 'buy' | 'sell';
+
+  @AllowNull(false)
+  @Column(DataType.STRING(20))
+  status: 'order' | 'confirm' | 'cancel';
 
   @ForeignKey(() => StockItem)
   @Column

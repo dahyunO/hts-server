@@ -21,5 +21,6 @@ module.exports = {
     '@typescript-eslint/lines-between-class-members': 'off',
     'import/prefer-default-export': 'off',
     '@typescript-eslint/no-misused-promises': 'off',
+    'import/no-cycle': 'off',
   },
 };

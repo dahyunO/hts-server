@@ -15,4 +15,7 @@ export default class StockItem extends Model {
 
   @HasMany(() => Order)
   orders: Order[];
+
+  @HasMany(() => StockItemHistory)
+  histories: StockItemHistory[];
 }
